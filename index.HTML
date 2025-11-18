@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calc">
+    <input class="int_text" type="text" readonly>
+
+    <div class="btn">
+      <button class="button"onclick="CurrentValue='';
+       document.querySelector('.int_text').value=CurrentValue">C</button>
+      <button class="button" onclick="CurrentValue=CurrentValue+'1';
+       document.querySelector('.int_text').value=CurrentValue"
+      >1</button>
+      <button class="button"onclick="CurrentValue=CurrentValue+'2';
+       document.querySelector('.int_text').value=CurrentValue">2</button>
+      
+
+      <button class="button"onclick="CurrentValue=CurrentValue+'+';
+       document.querySelector('.int_text').value=CurrentValue">+</button>
+      <button class="button"onclick="CurrentValue=CurrentValue+'3';
+       document.querySelector('.int_text').value=CurrentValue">3</button>
+      <button class="button"onclick="CurrentValue=CurrentValue+'4';
+       document.querySelector('.int_text').value=CurrentValue">4</button>
+      
+    
+      <button class="button"onclick="CurrentValue=CurrentValue+'-';
+       document.querySelector('.int_text').value=CurrentValue">-</button>
+      <button class="button"onclick="CurrentValue=CurrentValue+'5';
+       document.querySelector('.int_text').value=CurrentValue">5</button>
+      <button class="button"onclick="CurrentValue=CurrentValue+'6';
+       document.querySelector('.int_text').value=CurrentValue">6</button>
+      
+
+      <button class="button"onclick="CurrentValue=CurrentValue+'*';
+       document.querySelector('.int_text').value=CurrentValue">*</button>
+      <button class="button"onclick="CurrentValue=CurrentValue+'7';
+       document.querySelector('.int_text').value=CurrentValue">7</button>
+      <button class="button"onclick="CurrentValue=CurrentValue+'8';
+       document.querySelector('.int_text').value=CurrentValue">8</button>
+      
+
+      <button class="button"onclick="CurrentValue=CurrentValue+'/';
+       document.querySelector('.int_text').value=CurrentValue">/</button>
+      <button class="button" 
+      onclick="
+      let FinalResult=eval(CurrentValue);
+      CurrentValue=FinalResult;
+       document.querySelector('.int_text').value=CurrentValue">=</button>
+
+
+      <button class="button"onclick="CurrentValue=CurrentValue+'9';
+       document.querySelector('.int_text').value=CurrentValue">9</button>
+      
+
+      <button class="button"onclick="CurrentValue=CurrentValue+'0';
+       document.querySelector('.int_text').value=CurrentValue">0</button>
+      <button class="button"onclick="CurrentValue=CurrentValue+'.';
+       document.querySelector('.int_text').value=CurrentValue">.</button>
+    </div>
+       
+  </div>
+  <script >
+  let CurrentValue='';
+  document.querySelector('.int_text').value=CurrentValue;
+  </script>
+</body>
+</html>
